@@ -52,18 +52,19 @@ public_tweets = api.home_timeline()
 
 #followers
 overall = []
-s = ['moonlightmov','MBTSMovie','LaLaLand','keithmaitland','arrivalmovie','TheJungleBook','EdgeOf17','SullyMovie','LorenzoVigas','The_Green_Gold','thebeatles','DrStrange','','taleoftales','CaptainMovieUK','','HailCaesarMovie ‏','HacksawRidge‏','dontbreathe','','','','NateParker','justinlin','meeraonthewall','LoreneScafaria','PopstarMovie','DanielRagussis','','lastdesert','','barbershopmovie ‏','gilkenan','FantasticBeasts','InfiltratorMov','RogueOneMovie','whitegirl_movie','TheConjuring','deadpoolmovie','GoatMovie','The Eyes of My Mother ','DavidFarrUK','mshowalter','BleedForThis','','Ghostbusters','AlliedMovie','TumbledownMovie','BadMoms','']
-s1 = ['IntoTheForest','ElvisNixonMovie','AbFabMovie ‏','jasonbourne','PlayNerve','','LightsOutMovie','SnowdenTheMovie','hologramforking','MichaelTougias ‏','','WTFTheMovie','MissPeregrinesHomeForPeculiarChildren']
-s2 = ['Band_of_Robbers','wardogsmovie','','RaceMovie','','AlmostChristmas','Robburnett1','','','','HandsofStoneMov','EddieEagleMovie','AdamBaldwin','ProgramTheMovie', 'knightofcupsmov','','FreeStateMovie','','MrRightMovie','CentralIntel','XMenMovies','Triple9Movie','tnd_film','','desierto','RisenMovie','accountantmovie','','','','janegotagunfilm ‏','livebynight','13hours','girlontrainfilm','Morgan','JackReacher','DressmakerMovie','']
+s = ['','moonlightmov','MBTSMovie','LaLaLand','keithmaitland','arrivalmovie','TheJungleBook','EdgeOf17','SullyMovie','LorenzoVigas','The_Green_Gold','thebeatles','DrStrange','','taleoftales','CaptainMovieUK','','HailCaesarMovie ‏','HacksawRidge‏','dontbreathe','','','','NateParker','justinlin','meeraonthewall','LoreneScafaria','PopstarMovie','DanielRagussis','','lastdesert','','barbershopmovie ‏','gilkenan','FantasticBeasts','InfiltratorMov','RogueOneMovie','whitegirl_movie','TheConjuring','deadpoolmovie','GoatMovie','The Eyes of My Mother ','DavidFarrUK','mshowalter','BleedForThis','','Ghostbusters','AlliedMovie','TumbledownMovie','BadMoms','']
+s += ['IntoTheForest','ElvisNixonMovie','AbFabMovie ‏','jasonbourne','PlayNerve','','LightsOutMovie','SnowdenTheMovie','hologramforking','MichaelTougias ‏','','WTFTheMovie','MissPeregrinesHomeForPeculiarChildren']
+s += ['Band_of_Robbers','wardogsmovie','','RaceMovie','','AlmostChristmas','Robburnett1','','','','HandsofStoneMov','EddieEagleMovie','AdamBaldwin','ProgramTheMovie', 'knightofcupsmov','','FreeStateMovie','','MrRightMovie','CentralIntel','XMenMovies','Triple9Movie','tnd_film','','desierto','RisenMovie','accountantmovie','','','','janegotagunfilm ‏','livebynight','13hours','girlontrainfilm','Morgan','JackReacher','DressmakerMovie','']
 
 sf = []
 for name in s:
 	try:
 		user = api.get_user(name)
-		sf.insert(user.followers_count)
+		l = user.followers_count
+		print(l)
+		sf.append(l)
 	except:
-		sf.insert(0)
+		print('escape')
+		sf.append(0)
 	
-
-print(sf)
 
