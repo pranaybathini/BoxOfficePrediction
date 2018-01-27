@@ -52,10 +52,10 @@ public_tweets = api.home_timeline()
 
 #followers
 overall = []
-s = ['','moonlightmov','MBTSMovie','LaLaLand','keithmaitland','arrivalmovie','TheJungleBook','EdgeOf17','SullyMovie','LorenzoVigas','The_Green_Gold','thebeatles','DrStrange','','taleoftales','CaptainMovieUK','','HailCaesarMovie ‏','HacksawRidge‏','dontbreathe','','','','NateParker','justinlin','meeraonthewall','LoreneScafaria','PopstarMovie','DanielRagussis','','lastdesert','','barbershopmovie ‏','gilkenan','FantasticBeasts','InfiltratorMov','RogueOneMovie','whitegirl_movie','TheConjuring','deadpoolmovie','GoatMovie','The Eyes of My Mother ','DavidFarrUK','mshowalter','BleedForThis','','Ghostbusters','AlliedMovie','TumbledownMovie','BadMoms','']
+s = ['moonlightmov','MBTSMovie','LaLaLand','keithmaitland','arrivalmovie','TheJungleBook','EdgeOf17','SullyMovie','LorenzoVigas','The_Green_Gold','thebeatles','DrStrange','','taleoftales','CaptainMovieUK','','HailCaesarMovie ‏','HacksawRidge‏','dontbreathe','','','','NateParker','justinlin','meeraonthewall','LoreneScafaria','PopstarMovie','DanielRagussis','','lastdesert','','barbershopmovie ‏','gilkenan','FantasticBeasts','InfiltratorMov','RogueOneMovie','whitegirl_movie','TheConjuring','deadpoolmovie','GoatMovie','The Eyes of My Mother ','DavidFarrUK','mshowalter','BleedForThis','','Ghostbusters','AlliedMovie','TumbledownMovie','BadMoms','']
 s += ['IntoTheForest','ElvisNixonMovie','AbFabMovie ‏','jasonbourne','PlayNerve','','LightsOutMovie','SnowdenTheMovie','hologramforking','MichaelTougias ‏','','WTFTheMovie','MissPeregrinesHomeForPeculiarChildren']
 s += ['Band_of_Robbers','wardogsmovie','','RaceMovie','','AlmostChristmas','Robburnett1','','','','HandsofStoneMov','EddieEagleMovie','AdamBaldwin','ProgramTheMovie', 'knightofcupsmov','','FreeStateMovie','','MrRightMovie','CentralIntel','XMenMovies','Triple9Movie','tnd_film','','desierto','RisenMovie','accountantmovie','','','','janegotagunfilm ‏','livebynight','13hours','girlontrainfilm','Morgan','JackReacher','DressmakerMovie','']
-
+s += ['NYSMmovie','KillFriendsFilm','PPZmovie','MiraclesHeaven','BatmanvSuperman','AmPastoralMovie','EqualsTheMovie','officexmasparty','infernothemovie','TheBoyMovie','','','PassengersMovie','SuicideSquadWB','TMNTMovie ‏','','TheMechanic','BenHurMovie','','','AssassinsMovie‏','','TheHuntsman','','','ZoolanderMovie','DivergentSeries','RideAlong','ID4Sequel ‏','warcraftmovie','FSOBMovie','GodsofEgypt','CBeautyMovie','','ninelives','','LionMovie','HiddenFigures','amonstercalls']
 sf = []
 for name in s:
 	try:
